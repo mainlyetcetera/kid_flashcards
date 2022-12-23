@@ -1,10 +1,15 @@
 version: '3'
 services:
   postgres:
-    image: 'postgres:latest'
+    restart: on-failure
+    build:
+      dockerfile: Dockerfile
+      context: ./db
     environment:
       - POSTGRES_PASSWORD=something_secure
+      - POSTGRES_DB=flashcards
   client:
+    restart: on-failure
     build:
       dockerfile: Dockerfile
       context: ./client
@@ -14,15 +19,18 @@ services:
     ports:
       - 8001:3000
   server:
+    restart: on-failure
     build: 
       dockerfile: Dockerfile
       context: ./server
     volumes:
       - /app/node_modules
       - ./server:/app
+    ports:
+      - 5000:5000
     environment:
       - PGUSER=postgres
       - PGHOST=postgres
-      - PGDATABASE=postgres
+      - PGDATABASE=flashcards
       - PGPASSWORD=something_secure
       - PGPORT=5432
