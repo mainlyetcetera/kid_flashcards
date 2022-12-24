@@ -19,7 +19,7 @@ create table colors (
 insert into numbers (
     "number",
     "tally_img"
-) values (
+) values (http://some_image.pnghttp://some_image.png
     '0',
     'http://some_image.png'
 ), (
@@ -58,107 +58,107 @@ insert into letters (
 ) values (
     'a',
     'A',
-    'http://some_image.png'
+    'ant.png'
 ), (
     'b',
     'B',
-    'http://some_image.png'
+    'blue.jpg'
 ), (
     'c',
     'C',
-    'http://some_image.png'
+    'cat.jpg'
 ), (
     'd',
     'D',
-    'http://some_image.png'
+    'dancing.png'
 ), (
     'e',
     'E',
-    'http://some_image.png'
+    'eating.jpg'
 ), (
     'f',
     'F',
-    'http://some_image.png'
+    'food.jpg'
 ), (
     'g',
     'G',
-    'http://some_image.png'
+    'girl.jpg'
 ), (
     'h',
     'H',
-    'http://some_image.png'
+    'hat.jpg'
 ), (
     'i',
     'I',
-    'http://some_image.png'
+    'igloo.jpg'
 ), (
     'j',
     'J',
-    'http://some_image.png'
+    'jack-o-lantern.jpg'
 ), (
     'k',
     'K',
-    'http://some_image.png'
+    'kite.jpg'
 ), (
     'l',
     'L',
-    'http://some_image.png'
+    'llama.jpg'
 ), (
     'm',
     'M',
-    'http://some_image.png'
+    'miren.jpg'
 ), (
     'n',
     'N',
-    'http://some_image.png'
+    'nose.jpg'
 ), (
     'o',
     'O',
-    'http://some_image.png'
+    'owl.jpg'
 ), (
     'p',
     'P',
-    'http://some_image.png'
+    'panda.jpg'
 ), (
     'q',
     'Q',
-    'http://some_image.png'
+    'queen.jpg'
 ), (
     'r',
     'R',
-    'http://some_image.png'
+    'rabbit.jpg'
 ), (
     's',
     'S',
-    'http://some_image.png'
+    'squirrel.jpg'
 ), (
     't',
     'T',
-    'http://some_image.png'
+    'tiger.png'
 ), (
     'u',
     'U',
-    'http://some_image.png'
+    'umbrella.jpg'
 ), (
     'v',
     'V',
-    'http://some_image.png'
+    'volcano.jpg'
 ), (
     'w',
     'W',
-    'http://some_image.png'
+    'whale.png'
 ), (
     'x',
     'X',
-    'http://some_image.png'
+    'fox.jpg'
 ), (
     'y',
     'Y',
-    'http://some_image.png'
+    'yoyo.png'
 ), (
     'z',
     'Z',
-    'http://some_image.png'
+    'zebra.png'
 );
 
 insert into colors (
@@ -166,20 +166,20 @@ insert into colors (
     "img"
 ) values (
     'red',
-    'http://some_image.png'
+    'red.jpg'
 ), (
     'yellow',
-    'http://some_image.png'
+    'yellow.jpg'
 ), (
     'blue',
-    'http://some_image.png'
+    'blue.jpg'
 ), (
     'purple',
-    'http://some_image.png'
+    'purple.png'
 ), (
     'green',
-    'http://some_image.png'
+    'green.jpg'
 ), (
     'orange',
-    'http://some_image.png'
+    'orange.jpg'
 );
