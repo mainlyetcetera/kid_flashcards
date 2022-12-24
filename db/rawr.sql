@@ -19,7 +19,7 @@ create table colors (
 insert into numbers (
     "number",
     "tally_img"
-) values (http://some_image.pnghttp://some_image.png
+) values (
     '0',
     'http://some_image.png'
 ), (
