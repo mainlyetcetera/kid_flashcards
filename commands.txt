@@ -1,0 +1,38 @@
+sudo amazon-linux-extras install docker -y
+amazon-linux-extras help
+amazon-linux-extras list
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose version
+which docker
+which docker-compose
+exit
+curl localhost:5000
+which lsof
+lsof -i :3000
+lsof -i :5000
+lsof -i :8001
+which lsof
+man lsof
+lsof -i 5000
+curl localhost:5000
+curl localhost:8001
+curl localhost:3000
+systemctl status docker-compose
+systemctl status docker*
+sudo systemctl status docker-compose
+sudo systemctl status docker
+clear
+docker ps
+docker exec -it 182 sh
+lsof -i :3000
+lsof -i :5000
+lsof -i :3000
+docker ps
+history
+
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+newgrp docker
+docker-compose up --build
