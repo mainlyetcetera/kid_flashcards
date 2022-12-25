@@ -3,6 +3,7 @@ import { App, TerraformStack, TerraformOutput, RemoteBackend } from "cdktf";
 import { AwsProvider } from "@cdktf/provider-aws/lib/provider";
 import { Instance } from "@cdktf/provider-aws/lib/instance";
 import { SecurityGroup } from "@cdktf/provider-aws/lib/security-group";
+// import { S3Bucket } from "@cdktf/provider-aws/lib/s3-bucket";
 // import { Vpc } from "@cdktf/provider-aws/lib/vpc";
 
 class MyStack extends TerraformStack {
@@ -55,6 +56,26 @@ class MyStack extends TerraformStack {
     new TerraformOutput(this, "public_ip", {
       value: ec2Instance.publicIp,
     });
+
+    // const bucket = new S3Bucket(this, "image_bucket", {
+    //     bucket: "metc-image-bucket",
+    //     grant: [
+    //         {
+    //             type: "Group",
+    //             uri: "http://acs.amazonaws.com/groups/global/AllUsers",
+    //             permissions: ["READ"]
+    //         },
+    //         {
+    //             type: "CanonicalUser",
+    //             id: "e558b242d3cbd5d68bc8bd519b608278876a7dab394861d4db8bf14ebff5fbca",
+    //             permissions: ["FULL_CONTROL"]
+    //         }
+    //     ]
+    // });
+
+    // new TerraformOutput(this, "bucket_arn", {
+    //   value: bucket.arn
+    // });
 
   }
 }
