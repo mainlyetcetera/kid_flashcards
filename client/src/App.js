@@ -1,24 +1,23 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css';
-import { GameCard } from '../src/components/GameCard/GameCard'
+import { Dashboard } from './components/Dashboard/Dashboard'
+import { Numbers } from './components/Numbers/Numbers'
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
-          Welcome to Miren and Conor's Flashcards Game!
-        </h1>
-        <div>
-          <h3>
-            Which game would you like to play?
-          </h3>
-          <div className="card-holder">
-            <GameCard text="Colors" img="blue.jpg" />
-            <GameCard text="Numbers" img="fox.jpg" />
-            <GameCard text="Letters" img="owl.jpg" />
-          </div>
-        </div>
+      <Routes>
+        <Route
+          path="/"
+          element={<Dashboard />}
+        />
+        <Route
+          path="/numbers"
+          element={<Numbers />}
+        />
+      </Routes>
       </header>
     </div>
   );
