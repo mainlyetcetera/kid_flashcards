@@ -17,7 +17,7 @@ services:
       - /app/node_modules
       - ./client:/app
     ports:
-      - 8001:3000
+      - 3000:3000
   server:
     restart: on-failure
     build: 

@@ -1,8 +1,9 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import cookieSession from 'cookie-session'
+import cors from 'cors'
 import { AppRouter } from './AppRouter'
-import { pool } from './db/db'
+// import { pool } from './db/db'
 import './controllers/RootController'
 import './controllers/NumbersController'
 import './controllers/LogoutController'
@@ -11,6 +12,7 @@ import './controllers/ProtectedController'
 const app = express()
 const port = 5000
 
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cookieSession({ keys: ['blubber'] }))
 app.use(AppRouter.getInstance())
