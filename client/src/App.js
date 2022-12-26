@@ -24,15 +24,3 @@ function App() {
 }
 
 export default App;
-
-// import { useState, useEffect } from 'react';
-// import axios from 'axios';
-  // const [v, setV] = useState([]);
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const rawr = await axios.get('http://localhost:5000');
-      // console.log(rawr.statusText);
-      // setV(rawr);
-    // }
-    // fetchData()
-  // });

@@ -1,6 +1,13 @@
 a:link,
 a:visited {
-  color: #c8cbcf;
+  color: #000;
   text-decoration: none;
 }
 
+.card-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vh;
+  height: 30vh;
+}

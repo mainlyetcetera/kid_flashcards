@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './GameCard.css'
+import './GameSelectionCard.css'
 
-export const GameCard = ({ text, img, destination }) => {
+export const GameSelectionCard = ({ text, img, destination }) => {
   destination = destination || ''
 
   return (
@@ -13,7 +13,7 @@ export const GameCard = ({ text, img, destination }) => {
       <p className="card-text">
         { text }
       </p>
-      <img src={require(`../../assets/${img}`)} alt="" className="card-img" />
+      <img src={require(`../../../assets/${img}`)} alt="" className="card-img" />
     </Link>
   )
 }

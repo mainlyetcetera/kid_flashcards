@@ -1,7 +1,8 @@
 create table numbers (
     id serial primary key,
     number integer,
-    tally_img varchar(200)
+    die_img varchar(200),
+    num_img varchar(200)
 );
 
 create table letters (
@@ -18,37 +19,20 @@ create table colors (
 
 insert into numbers (
     "number",
-    "tally_img"
+    "die_img",
+    "num_img"
 ) values (
-    '0',
-    'http://some_image.png'
-), (
     '1',
-    'http://some_image.png'
+    'die_one.png',
+    'num_one.png'
 ), (
     '2',
-    'http://some_image.png'
+    'die_two.png',
+    'num_two.png'
 ), (
     '3',
-    'http://some_image.png'
-), (
-    '4',
-    'http://some_image.png'
-), (
-    '5',
-    'http://some_image.png'
-), (
-    '6',
-    'http://some_image.png'
-), (
-    '7',
-    'http://some_image.png'
-), (
-    '8',
-    'http://some_image.png'
-), (
-    '9',
-    'http://some_image.png'
+    'die_three.png',
+    'num_three.png'
 );
 
 insert into letters (

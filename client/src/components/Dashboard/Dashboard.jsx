@@ -1,4 +1,4 @@
-import { GameCard } from '../GameCard/GameCard'
+import { GameSelectionCard } from '../Cards/GameSelectionCard/GameSelectionCard'
 
 export const Dashboard = () => {
   return (
@@ -11,9 +11,9 @@ export const Dashboard = () => {
           Which game would you like to play?
         </h3>
         <div className="card-holder">
-          <GameCard text="Colors" img="blue.jpg" />
-          <GameCard text="Numbers" img="fox.jpg" destination="numbers" />
-          <GameCard text="Letters" img="owl.jpg" />
+          <GameSelectionCard text="Colors" img="blue.jpg" />
+          <GameSelectionCard text="Numbers" img="fox.jpg" destination="numbers" />
+          <GameSelectionCard text="Letters" img="owl.jpg" />
         </div>
       </div>
     </>
