@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import { Dashboard } from './components/Dashboard/Dashboard'
 import { Numbers } from './components/Numbers/Numbers'
+import { Yay } from './components/Yay/Yay'
+import { NextTime } from './components/NextTime/NextTime'
 
 function App() {
 
@@ -16,6 +18,14 @@ function App() {
         <Route
           path="/numbers"
           element={<Numbers />}
+        />
+        <Route
+          path="/numbers/yay"
+          element={<Yay />}
+        />
+        <Route
+          path="/numbers/next-time"
+          element={<NextTime />}
         />
       </Routes>
       </header>

@@ -1,15 +1,14 @@
 import React from 'react'
-// import { button } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './GamePlayCard.css'
 
-export const GamePlayCard = ({ value, img, handleClick }) => {
-  console.log({ handleClick })
+export const GamePlayCard = ({ value, img, goTo }) => {
   return (
-    <button 
+    <Link 
       className="card"
-      onClick={() => handleClick(value)} 
+      to={goTo(value)}
     >
       <img src={require(`../../../assets/${img}`)} alt="" className="card-img" />
-    </button>
+    </Link>
   )
 }
