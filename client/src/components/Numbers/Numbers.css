@@ -11,3 +11,7 @@ a:visited {
   width: 100vh;
   height: 30vh;
 }
+
+.msg {
+  color: #000;
+}
